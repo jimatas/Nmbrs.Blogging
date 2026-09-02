@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Blogging.Api/Blogging.Api.csproj" />
+    <Project Path="src/Blogging.Data/Blogging.Data.csproj" Id="4c303c7b-8e8a-4f0a-a883-4db32777cd8c" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/Blogging.Tests/Blogging.Tests.csproj" Id="fabfdcb1-738b-46f3-a7c5-174da58a0449" />
+  </Folder>
+</Solution>

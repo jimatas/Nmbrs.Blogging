@@ -1,0 +1,23 @@
+@host = http://localhost:8080
+
+# @name createPost
+POST {{host}}/post
+Content-Type: application/json
+Accept: application/json
+
+{
+  "authorId": "01a062ac-36a4-7060-9b5d-331347ac7c3f",
+  "title": "My first post",
+  "description": "This is a test post",
+  "content": "Hello, world!"
+}
+
+###
+
+GET {{host}}/post/{{createPost.response.body.$.id}}
+Accept: application/json
+
+###
+
+GET {{host}}/post/{{createPost.response.body.$.id}}?include=author
+Accept: application/json
