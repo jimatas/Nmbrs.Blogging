@@ -18,7 +18,7 @@ public sealed class BloggingApiFactory : WebApplicationFactory<Program>
 
             services.AddDbContext<BloggingDbContext>(
                 options => options.UseSqlite(
-                    $"Data Source={_databasePath}"));
+                    $"Data Source={_databasePath};Pooling=False"));
         });
     }
 
