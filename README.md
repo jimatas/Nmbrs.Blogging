@@ -74,6 +74,16 @@ Run the test suite from the repository root:
 
 `dotnet test`
 
+To run it with code coverage:
+
+`dotnet test --coverlet --coverlet-output-format cobertura`
+
+Application line coverage is approximately 96%.
+
+## Design considerations
+
+The architecture has intentionally been kept simple for this project. Controllers access the `DbContext` directly instead of introducing application or service layers.
+
 ## Assumptions
 
 For the scope and time investment of this technical assessment, the following assumptions were made:
